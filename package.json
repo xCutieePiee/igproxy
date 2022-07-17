@@ -4,6 +4,7 @@
   },
   "dependencies": {
     "express": "^4.13.3",
-    "koa-better-http-proxy": "^0.2.10"
+    "koa-better-http-proxy": "^0.2.10",
+    "koa": "^2.13.4"
   }
 }
