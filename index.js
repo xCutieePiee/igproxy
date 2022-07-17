@@ -1,12 +1,15 @@
-var express = require('express')
+// var express = require('express')
 var proxy = require('koa-better-http-proxy');
-var app = express()
+var Koa = require('koa');
 
-app.set('trust proxy', true)
+var app = new Koa();
+// var app = express()
 
-app.set('port', (process.env.PORT || 5000))
+// app.set('trust proxy', true)
+
+// app.set('port', (process.env.PORT || 5000))
 app.use(proxy('https://www.google.com'))
 
-app.listen(app.get('port'), function() {
+app.listen(process.env.PORT || 5000, function() {
   console.log('Bot online!')
 })
