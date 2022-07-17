@@ -9,9 +9,9 @@ var app = new Koa();
 
 // app.set('port', (process.env.PORT || 5000))
 app.use(proxy('https://www.instagram.com', {
-  strippedHeaders: [
-    'set-cookie'
-  ]
+  headers: {
+    "set-cookie": ""
+  }
 }))
 
 app.listen(process.env.PORT || 5000, function() {
