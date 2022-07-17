@@ -5,8 +5,5 @@
   "dependencies": {
     "express": "^4.13.3",
     "koa-better-http-proxy": "^0.2.10"
-  },
-  "engines": {
-    "node": "4.0.0"
   }
 }
