@@ -8,7 +8,7 @@ var app = new Koa();
 // app.set('trust proxy', true)
 
 // app.set('port', (process.env.PORT || 5000))
-app.use(proxy('https://www.google.com'))
+app.use(proxy('https://www.instagram.com'))
 
 app.listen(process.env.PORT || 5000, function() {
   console.log('Bot online!')
