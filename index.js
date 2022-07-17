@@ -5,9 +5,7 @@ var app = express()
 app.set('trust proxy', true)
 
 app.set('port', (process.env.PORT || 5000))
-app.use(proxy('https://www.google.com', {
-  preserveReqSession: true
-}))
+app.use(proxy('https://www.google.com'))
 
 app.listen(app.get('port'), function() {
   console.log('Bot online!')
